@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        input,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td {
+            margin: 0;
+            padding: 0
+        }
+
+        .box1 {
+
+
+            font-size: 0px;
+            width: 694px;
+            height: 50px;
+            margin: 20px auto 0px;
+        }
+
+        .box1 a {
+            border: 1px solid gold;
+            width: 98px;
+            height: 48px;
+            display: inline-block;
+            font: 16px "微软雅黑";
+            color: pink;
+            margin-left: -1px;
+            line-height: 50px;
+            background-color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .box1 a:hover {
+            background-color: gold;
+        }
+
+        .box1>ul>li:hover {
+            background: rgba(254, 177, 1);
+            cursor: pointer;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 41px;
+            border-bottom: 1px solid #ff8200;
+            margin-top: 100px;
+
+        }
+
+        .box2>ul>li {
+            list-style: none;
+            float: left;
+        }
+
+        .box2>ul>li:nth-child(1) {
+            width: 78px;
+            height: 39px;
+            background: rgba(250, 133, 0);
+            border: 1px solid #ff8200;
+            text-align: center;
+            line-height: 41px;
+            font-size: 16px;
+            color: white;
+            margin-left: -1px;
+        }
+
+        .box2>ul>li:nth-child(2) {
+            text-align: center;
+            line-height: 39px;
+            font-size: 16px;
+            color: rgba(176, 177, 175);
+            float: right;
+
+        }
+
+        .box3 {
+            width: 400px;
+            height: 80px;
+            border: 1px solid rgba(255, 142, 25);
+        }
+
+        .box3>ul>li {
+            list-style: none;
+
+        }
+
+        .box3>ul>li:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            background: #90ee90;
+            float: left;
+            margin: 10px;
+        }
+
+        .box3>ul>li:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            background: pink;
+            float: right;
+            margin: 10px;
+        }
+
+        .box4 {
+            width: 452px;
+            height: 212px;
+            border: 1px solid #000;
+        }
+
+        .box4>p {
+            text-indent: 30px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            float: left;
+            padding: 10px 10px;
+        }
+
+        .box5 {
+            width: 212px;
+            border: 1px solid #000;
+        }
+
+        .box5>ul>li {
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 215, 1);
+            float: left;
+            margin: 10px;
+        }
+
+        .box5>ul>li:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgba(7, 218, 0);
+        }
+
+        /* 使用before和after双伪元素清除浮动： */
+        .box5::before,
+        .box5::after {
+            content: "";
+            display: table;
+        }
+
+        .box5::after {
+            clear: both;
+        }
+
+        .box5 {
+            /* zoom：1就是和原来一样大小 */
+            *zoom: 1;
+        }
+
+        .box6 {
+            width: 694px;
+            height: 50px;
+
+        }
+
+        .box6>ul>li {
+            width: 98px;
+            height: 48px;
+            list-style: none;
+            float: left;
+            font: 16px '微软雅黑';
+            border: 1px solid gold;
+            text-align: center;
+            line-height: 50px;
+            color: pink;
+            margin-left: -1px;
+            background: #fff;
+
+
+        }
+
+        .box6>ul>li:hover {
+            cursor: pointer;
+            color: aliceblue;
+            background: rgba(255, 176, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>第一道</h1>
+    <div class="box1">
+        <a href="#">首页</a>
+        <a href="#">公司简介</a>
+        <a href="#">解决方案</a>
+        <a href="#">公司新闻</a>
+        <a href="#">行动动态</a>
+        <a href="#">招贤纳财</a>
+        <a href="#">联系我们</a>
+    </div>
+    <br>
+
+    <div class="box2">
+        <!-- <div class="box2Left">
+            新闻列表
+        </div>
+        <div class="box2Right">
+            更多>
+        </div> -->
+        <ul>
+            <li>新闻列表</li>
+            <li>更多></li>
+        </ul>
+    </div>
+    <h1>第三道</h1>
+    <div class="box3">
+        <ul>
+            <li></li>
+            <li></li>
+
+        </ul>
+    </div>
+    <h1>第四道</h1>
+    <div class="box4">
+        <p>
+            <img src="image/bg.jpg">
+            HTML HTML5是对HTML标准的第五次修订。其主要的目
+            标是将互联网语义化，以便更好地被人类和机器阅读，并同时提供更好地支持各种媒体的嵌入。HTML5的语法是向后兼容的。HTML5手机应用的最大优势就是可以在网页上直接调试和修改。原先应用的开发人员可能需要花费非常大的力气才能达到HTML
+            5的效果,不断地重复编码、调试和运行,这是首先得解决的-一个问题。因此也有许多手机杂志客户端是基于HTML5标准，开发人员可以轻松调试修改。
+        </p>
+    </div>
+    <h1>第五道</h1>
+    <div class="box5">
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>css3</li>
+            <li>JS</li>
+            <li>jQery</li>
+            <li>node</li>
+            <li>vue</li>
+            <li>Ajax</li>
+
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <h1>第六道</h1>
+    <div class="box6">
+        <ul>
+            <li>首页</li>
+            <li>公司简介</li>
+            <li>解决方案</li>
+            <li>公司新闻</li>
+            <li>行业动态</li>
+            <li>招贤纳才</li>
+            <li>联系我们</li>
+        </ul>
+    </div>
+    <br>
+
+</body>
+
+</html>
